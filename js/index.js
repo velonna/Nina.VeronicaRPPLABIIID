@@ -56,7 +56,8 @@ function ingresar(e) {
     potencia.value = nodos[7].innerText;
     rdoVenta.value = true;
     puertas.value = nodos[5].innerText;
-    document.getElementById("btnCancelar").hidden = false;
+    document.getElementById("btnCancelar").innerText= "Eliminar";
+    document.getElementById("btnCancelar").addEventListener("click",borrarDatosDelLoco);
     document.getElementById("btnModificarDato").hidden = false;
     document.getElementById("btnModificarDato").addEventListener("click",manejadorModificar);
     document.getElementById("btnGuadar").hidden = true;
