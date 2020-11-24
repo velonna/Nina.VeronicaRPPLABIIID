@@ -1,30 +1,19 @@
 
 
 export default class Anuncio {
-    constructor(id, titulo,transaccion,descripcion,precio,puertas,kms,potencia) {
-      this._id = id;
-      this._titulo = titulo;
-      this._transaccion = transaccion;
-      this._descripcion = descripcion;
-      this._precio = precio;
-      this._puertas = puertas;
-      this._kms= kms;
-      this.potencia =potencia;
+    constructor(_id, _titulo,_transaccion,_descripcion,_precio,_puertas,_kms,_potencia) {
+      this.id = _id;
+      this.titulo = _titulo;
+      this.transaccion = _transaccion;
+      this.descripcion = _descripcion;
+      this.precio = _precio;
+      this.puertas = _puertas;
+      this.kms= _kms;
+      this.potencia =_potencia;
            
     }
-    agregar() {
-        console.log(`hola ${this._id}`);
-    }
-    eleminar() {
-      console.log("eliminar");
-    }
-    modifcar() {
-      console.log("modificar");
-    }
-    buscar() {
-      console.log("buscar");
-    }
+  
 }
 
 
-export let a =9;
+export let a =0;
