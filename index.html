@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+    <script src="./js/index.js" type="module"></script> 
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title id="title">Pisteando</title>   <!--    -->
+
+</head>
+
+<body>
+    <header>        
+        <div class="contenedor contenido-header">
+            <div class="barra navheader">                                  
+                <div class="divNav">
+                </div>   
+                <nav id="navegacion" class="navegacion">
+                    <a href="#" class="enlace" id="link_nosotros">Nosotros</a>
+                    <a href="#" class="enlace" id="link_anuncios">Anuncios</a>
+                    <a href="#" class="enlace" id="link_blog">Blog</a>
+                    <a href="#" class="enlace" id="link_contacto">Contacto</a>
+                </nav>               
+
+            </div>
+            <h1>Administracion</h1>
+            <div class = "divclass">   
+                 <!-- img de barra-->   
+            <div>        
+                
+        </div> <!-- contenedor -->
+
+    </header>
+    <div class="container-fluid">    
+        <div id= "divh1" class="divh1class"> 
+            <span id="spinner" class="spinner">   
+                </div>  
+        <div class="divContenedor">
+            <fieldset>Informacion del Anuncio     
+                    <form id="form">
+                        <div class="form-group">
+                           Titulo
+                            <input class ="form-control "type="text" id="txtTitulo" placeholder="Ingrese Titulo..." >
+                            <input type="hidden" id="idtxt" >
+                         </div>
+                         Transaccion
+                         <div class="divBotones"> 
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rdoV" value="option1" checked = "true">
+                                <label class="form-check-label" for="rdoV"> Venta</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rdoA" value="option2">
+                                <label class="form-check-label" for="rdoA">Alquiler</label>
+                              </div>
+
+                         </div>
+
+                         <div class="form-group">
+                             Descripcion
+                                <input type="text" id="txtDescripcion" placeholder="Descripcion..." required>
+                        </div>
+                        <div class="form-group">
+                            Precio
+                            <i class="fas fa-money-bill-wave"></i><input type="text" id="txtPrecio" placeholder="Precio..." required >
+                        </div>
+                        <div class="form_box">                            
+                            <i class="fas fa-door-open"></i>  <input type="number" min="2" max="10" id="txtPuerta" placeholder="Puerta..." value = "4">
+                            <i class="fas fa-tachometer-alt"></i>  <input  type="number" min = "0" id="txtKm" placeholder="Km..." value="0" >
+                            <i class="fas fa-car-battery"></i>  <input  type="text" id="txtPotencia" placeholder="Potencia..."  >    
+                          
+                        </div>
+                       
+                   </form>
+                <div class="divBotones">
+                    <div class="pieLeft">
+                        <button type="submit" id="btnGuadar">
+                            <i class="far fa-save fa-2x"></i>
+                            Guardar
+                        </button>                                                    
+                   
+                    </div>
+                    <div class="pieRigth">
+                        <button id="btnCancelar">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                            Cancelar
+                        </button>
+        
+                    </div>
+                  
+                </div>
+
+            </fieldset>
+            <div id="divTabla" class="divTabla"></div>
+        </div> 
+    </div>
+
+    <footer class="pie">
+        <div class="pieLeft">
+            <nav class="navPie">
+
+                <a href="#" class="enlace" id="link_nosotros">Nosotros</a>
+
+                <a href="#" class="enlace" id="link_anuncios">Anuncios</a>
+
+                <a href="#" class="enlace" id="link_blog">Blog</a>
+
+                <a href="#" class="enlace" id="link_contacto">Contacto</a>
+
+            </nav>
+           
+        </div>
+        <div class="pieRigth">
+            <span>Todos los Derechos Reservados 2019 &copy; </span>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
