@@ -77,9 +77,6 @@ h1 {
     .divclass{
         width:auto; 
         height: auto;
-        background-image: url(../img/img.PNG) ;
-        background-repeat: no-repeat;
-        background-size: cover;
         margin-bottom: 2em;
         display: flex;  
         flex-wrap: wrap;
